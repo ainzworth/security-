@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  font-family: "Product Sans", sans-serif;
+}
+/*Google logo colors*/
+.g-blue {
+  color: #4285f4;
+}
+.o-red {
+  color: #db4437;
+}
+.o-yellow {
+  color: #f4b400;
+}
+.l-green {
+  color: #0f9d58;
+}
+.e-red {
+}
+:root {
+  --mar-lg: 50px;
+  --mar-md: 20px;
+  --mar-sm: 5px;
+  --lg_bl: #4285f4;
+}
+input.user {
+  padding: 5px 20px;
+  font-size: 20px;
+  z-index: 0;
+  border-radius: 3px;
+  height: 40px;
+  border: none;
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+input.user:focus {
+  outline: none !important;
+  transition-duration: 0.1s;
+  border: groove var(--lg_bl);
+}
+p.label_user {
+  z-index: 2;
+  position: relative;
+  bottom: -21px;
+  margin-top: -23px;
+  left: 10px;
+  height: 0px;
+  width: max-content;
+  background-color: inherit;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 8px 0 12px;
+  height: fit-content;
+}
+
+.input_panel {
+  padding: 2px 0px;
+  margin: 2px auto;
+  width: fit-content;
+  z-index: 1;
+}
+
+input.user:active {
+  border: var(--lg_bl);
+}
+
+.login_container {
+  position: absolute;
+  padding: 0 10px;
+  border-radius: 2px;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  margin-left: -225px;
+  margin-top: -250px;
+
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+form {
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+div.pad {
+  padding: 0;
+  margin: var(--mar-md) 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--lg_bl);
+
+  font-size: 15px;
+}
+
+.center {
+  text-align: start;
+  max-width: 300px;
+}
+
+div.mar_sm {
+  padding: 0;
+  margin: var(--mar-sm) 0;
+}
+div.mar_lg {
+  padding: 0;
+  margin: var(--mar-lg) 0;
+}
+
+div.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.flexbox > button {
+  width: 80px;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--lg_bl);
+}
+
+div.flexbox > div {
+  display: flex;
+  align-items: center;
+}
+div.flexbox > div > a {
+  margin: auto 0;
+}
